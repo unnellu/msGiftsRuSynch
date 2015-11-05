@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="msgiftsrusynch" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="msgiftsrusynch" version="1.1">
+
+	<object class="msGiftsRuSynchItem" table="msgiftsrusynch_items" extends="xPDOSimpleObject">
+		<field key="name" dbtype="varchar" precision="100" phptype="string" null="true" default=""/>
+		<field key="description" dbtype="text" phptype="text" null="true" default=""/>
+		<field key="date" dbtype="timestamp" phptype="timestamp" null="true" default="0000-00-00 00:00:00" />
+		<field key="active" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="true" default="1" />
+
+		<index alias="name" name="name" primary="false" unique="false" type="BTREE">
+			<column key="name" length="" collation="A" null="false"/>
+		</index>
+		<index alias="date" name="date" primary="false" unique="false" type="BTREE">
+			<column key="date" length="" collation="A" null="false" />
+		</index>
+	</object>
+
+</model>

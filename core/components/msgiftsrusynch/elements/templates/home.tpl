@@ -1,0 +1,1 @@
+<div id="msgiftsrusynch-panel-home-div"></div>
