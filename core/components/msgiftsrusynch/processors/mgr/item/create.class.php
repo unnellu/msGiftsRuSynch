@@ -23,8 +23,8 @@ class msGiftsRuSynchItemCreateProcessor extends modObjectCreateProcessor {
 			'catalogue.xml',
 		);
 
-		$api_user = $this->modx->getOption('msgiftsrusynch_api_user', null, ''); // 20865_xmlexport
-		$api_password = $this->modx->getOption('msgiftsrusynch_api_password', null, ''); // 123456
+		$api_user = $this->modx->getOption('msgiftsrusynch_api_user', null, '');
+		$api_password = $this->modx->getOption('msgiftsrusynch_api_password', null, '');
 
 		if( $api_user == '' || $api_password == '' )
 		{
